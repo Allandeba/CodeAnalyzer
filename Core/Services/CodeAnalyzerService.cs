@@ -33,7 +33,7 @@ public class CodeAnalyzerService
 
     private bool ShouldIgnoreFile(string filePath)
         => _config
-            .IgnoredFiles.Any(path => 
+            .IgnoredFiles.Any(path =>
                 Path.GetFileName(filePath)
                     .EndsWith(path, StringComparison.OrdinalIgnoreCase)
             );
