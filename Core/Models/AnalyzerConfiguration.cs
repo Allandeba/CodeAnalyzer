@@ -9,10 +9,4 @@ public class AnalyzerConfiguration
 
     [JsonPropertyName("strictNaming")]
     public bool StrictNaming { get; set; } = true;
-
-    [JsonPropertyName("outputFormat")]
-    public string OutputFormat { get; set; } = "Console";
-
-    [JsonPropertyName("logLevel")]
-    public string LogLevel { get; set; } = "Information";
 }
